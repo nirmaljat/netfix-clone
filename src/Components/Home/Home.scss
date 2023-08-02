@@ -1,0 +1,39 @@
+$bg: rgb(16, 16, 16);
+
+
+.banner{
+    align-items: center;
+    height: 400px;
+    background-color:$bg ;
+    >img{
+        width: 130%;
+        max-height: 100%;
+        
+    }
+}
+
+.row{
+    background-color: $bg;
+    padding: 1rem;
+
+    >h2{
+        margin: 0.3rem;
+        font-weight: 400;
+    }
+ >div{
+    display: flex;
+    overflow-x: auto;
+    justify-content: center;
+    
+ }
+}
+
+.card{
+    width: 200px;
+    cursor: pointer;
+    margin: 1rem;
+    transition: transform 0.5s;
+    &:hover{
+        transform: translateY(-10px) scale(1.05);
+    }
+}
